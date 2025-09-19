@@ -8,7 +8,7 @@ import { getAuth, GoogleAuthProvider, setPersistence, browserLocalPersistence } 
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCitJpTVcEKamYzuPbMXAeCLzeGsNuQDc4",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "resolve-41e21.firebaseapp.com",
   projectId: "resolve-41e21",
   storageBucket: "resolve-41e21.firebasestorage.app",
