@@ -1,17 +1,25 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { use, useEffect } from "react";
+import { Link,useLocation } from "react-router-dom";
+import Footer from "./Footer";
+
+function ScrollToTop(){
+  const {pathname} = useLocation();
+  useEffect(() =>{
+    window.scrollTo(0,0);
+  }, [pathname]);
+  return null;
+}
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-200 via-purple-200 to-pink-200 flex items-center justify-center px-6 py-12">
+    <><div className="min-h-screen bg-gradient-to-br from-indigo-200 via-purple-200 to-pink-200 flex items-center justify-center px-6 py-12">
       {/* Content Card */}
       <div className="bg-white/70 backdrop-blur-md rounded-2xl shadow-xl p-8 max-w-2xl w-full text-center border border-purple-100">
         {/* Logo */}
         <img
           src="/icon.png"
           alt="ReSolve Logo"
-          className="h-16 w-16 mx-auto mb-4 rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
-        />
+          className="h-16 w-16 mx-auto mb-4 rounded-lg shadow-md hover:scale-105 transition-transform duration-300" />
 
         {/* Title */}
         <h1 className="text-4xl font-extrabold text-violet-700 mb-2 tracking-wide">
@@ -33,19 +41,21 @@ function Home() {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link
             to="/revise"
-className="bg-violet-600 text-white px-7 py-3.5 rounded-full shadow-md hover:shadow-violet-400 hover:scale-105 hover:text-white transition duration-300 ease-in-out"          
->
+            className="bg-violet-600 text-white px-7 py-3.5 rounded-full shadow-md hover:shadow-violet-400 hover:scale-105 hover:text-white transition duration-300 ease-in-out"
+          >
             Start Revising
           </Link>
           <Link
             to="/add-problem"
-className="bg-white border border-violet-600 text-violet-700 px-7 py-3.5 rounded-full shadow-md hover:shadow-violet-200 hover:scale-105 hover:text-violet-700 transition duration-300 ease-in-out"          
->
+            className="bg-white border border-violet-600 text-violet-700 px-7 py-3.5 rounded-full shadow-md hover:shadow-violet-200 hover:scale-105 hover:text-violet-700 transition duration-300 ease-in-out"
+          >
             Add Today's Problem
           </Link>
         </div>
       </div>
     </div>
+    <Footer />
+    <ScrollToTop /></>
   );
 }
 
