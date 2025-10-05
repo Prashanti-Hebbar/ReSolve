@@ -12,7 +12,7 @@ function Navbar() {
             alt="ReSolve Logo"
             className="h-8 w-8 rounded-md shadow-sm hover:scale-105 transition-transform duration-300"
           />
-          <span className="text-2xl font-extrabold text-violet-700 hover:text-violet-900 transition duration-300 tracking-wide">
+          <span className="text-2xl font-extrabold text-violet-700 hover:text-green-700 transition duration-300 tracking-wide">
             ReSolve
           </span>
         </Link>
