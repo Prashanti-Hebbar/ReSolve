@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -25,21 +25,22 @@ function Home() {
 
         {/* Subtitle */}
         <p className="text-md text-gray-600 mb-6">
-          Build your coding habits, track your progress, and revise smarter—one streak at a time.
+          Build your coding habits, track your progress, and revise smarter—one
+          streak at a time.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link
             to="/revise"
-            className="bg-violet-600 text-white px-6 py-3 rounded-full shadow hover:bg-violet-700 transition duration-300"
-          >
+className="bg-violet-600 text-white px-7 py-3.5 rounded-full shadow-md hover:shadow-violet-400 hover:scale-105 hover:text-white transition duration-300 ease-in-out"          
+>
             Start Revising
           </Link>
           <Link
             to="/add-problem"
-            className="bg-white border border-violet-600 text-violet-700 px-6 py-3 rounded-full hover:bg-violet-50 transition duration-300"
-          >
+className="bg-white border border-violet-600 text-violet-700 px-7 py-3.5 rounded-full shadow-md hover:shadow-violet-200 hover:scale-105 hover:text-violet-700 transition duration-300 ease-in-out"          
+>
             Add Today's Problem
           </Link>
         </div>
