@@ -1,8 +1,9 @@
 import React from 'react';
+import Footer from "./Footer";
 
 function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 px-6 py-12 flex flex-col items-center text-center">
+    <><div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 px-6 py-12 flex flex-col items-center text-center">
       <h1 className="text-4xl font-extrabold text-violet-700 mb-4">About ReSolve</h1>
 
       <p className="max-w-3xl text-lg text-gray-700 mb-6">
@@ -28,6 +29,8 @@ function About() {
         Built with ❤️ by passionate learners, for passionate learners.
       </p>
     </div>
+    <Footer /> 
+    </>
   );
 }
 

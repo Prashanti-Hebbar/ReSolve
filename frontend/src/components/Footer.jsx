@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 text-gray-700 py-8 mt-12 border-t border-indigo-200">
+    <footer className="bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 text-gray-700 py-8 border-t border-indigo-200">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center sm:text-left">
         
         {/* Brand & Mission */}
